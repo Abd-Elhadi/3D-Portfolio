@@ -58,16 +58,12 @@ import {
       icon: html,
     },
     {
-      name: "CSS 3",
+      name: "CSS3",
       icon: css,
     },
     {
       name: "JavaScript",
       icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
     },
     {
       name: "React JS",
@@ -86,16 +82,8 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
     },
   ];
   
