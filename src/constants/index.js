@@ -23,6 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    amanleek
   } from "../assets";
   
   export const navLinks = [
@@ -98,7 +99,21 @@ import {
     },
   ];
   
-  const experiences = [
+const experiences = [
+  
+    {
+      title: "Software Engineer",
+      company_name: "Amanleek",
+      icon: amanleek,
+      iconBg: "#E6DEDD",
+      date: "August 2022 - October 2022",
+      points: [
+        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Collaborating with product manager and other developers to create high-quality products.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
     {
       title: "React.js Developer",
       company_name: "Starbucks",
