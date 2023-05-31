@@ -23,7 +23,14 @@ import {
     jobit,
     tripguide,
     threejs,
-    amanleek
+    amanleek,
+    tenzies,
+    quizgame,
+    notesapp,
+    memegenerator,
+    elzerotemplate,
+    specialdesign,
+    memorygame
   } from "../assets";
   
   export const navLinks = [
@@ -133,67 +140,146 @@ const experiences = [
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Quiz Game App",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Quiz Game is a WebApp that access trivia questions from the Open Trivia Database API and score players based on their answers.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
         },
         {
           name: "css",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: quizgame,
+      source_code_link: "https://github.com/Abd-Elhadi/Quiz-Game-App",
+      live_site_link: "https://quiz-app-aom.netlify.app/",
+    },
+    {
+      name: "Tenzies",
+      description:
+        "Tenzies is a fun dice game that you can play with your friends and family. The game requires you to roll the dice and try to match the numbers on the dice with the numbers on the board.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tenzies,
+      source_code_link: "https://github.com/Abd-Elhadi/Tenzies-Game",
+      live_site_link: "https://tenzies-game-aom.netlify.app/",
+    },
+    {
+      name: "Note App",
+      description:
+        "Markdown Notes App, is a web application that allows users to create, update and deleted notes. It also persists the notes on local storage.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: notesapp,
+      source_code_link: "https://github.com/Abd-Elhadi/Markdown-Notes-App",
+      live_site_link: "https://notes-app-aom.netlify.app/",
+    },
+    {
+      name: "Meme Generator",
+      description:
+        "Meme Generator is a React app that retrieves meme images from the Imgflip API and displays random images to the page. It also allows the user to add top and bottom texes to the image.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "api",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: memegenerator,
+      source_code_link: "https://github.com/Abd-Elhadi/Meme-Generator",
+      live_site_link: "https://meme-generator-aom.netlify.app/",
+    },
+    {
+      name: "Elzero Template",
+      description:
+        "This is a project for creating Elzero Template using HTML and CSS. I created it to practice my coding skills by building realistic projects.",
+      tags: [
+        {
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: elzerotemplate,
+      source_code_link: "https://github.com/Abd-Elhadi/Elzero-Template",
+      live_site_link: "https://elzero-template-aom.netlify.app/",
+    },
+    {
+      name: "Memory Game",
+      description:
+        "Uncover two matching symbols at once to eliminate them from the game. Eliminate all cards as fast as you can to win the game.",
+      tags: [
+        {
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: memorygame,
+      source_code_link: "https://github.com/Abd-Elhadi/Memory-Game",
+      live_site_link: "https://memory-game-aom.netlify.app/",
+    },
+    {
+      name: "Special Design",
+      description:
+        "",
+      tags: [
+        {
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: specialdesign,
+      source_code_link: "https://github.com/Abd-Elhadi/Special-Template",
+      live_site_link: "https://special-templpate-aom.netlify.app/",
     },
   ];
   

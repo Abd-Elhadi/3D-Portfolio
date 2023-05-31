@@ -31,6 +31,14 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import quizgame from './quizapp.png'
+import tenzies from './tenzies.png'
+import memegenerator from './memegenerator.png'
+import notesapp from './notesapp.png'
+import memorygame from './memorygame.png'
+import elzerotemplate from './elzerotemplate.png'
+import specialdesign from './specialdesign.png'
+
 export {
   logo,
   backend,
@@ -61,4 +69,11 @@ export {
   carrent,
   jobit,
   tripguide,
+  quizgame,
+  tenzies,
+  memegenerator,
+  notesapp,
+  specialdesign,
+  memorygame,
+  elzerotemplate
 };
