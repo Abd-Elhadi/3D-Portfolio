@@ -149,6 +149,10 @@ const experiences = [
           color: "blue-text-gradient",
         },
         {
+          name: "api",
+          color: "green-text-gradient",
+        },
+        {
           name: "css",
           color: "pink-text-gradient",
         },
