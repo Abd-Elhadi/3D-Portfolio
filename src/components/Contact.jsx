@@ -6,6 +6,10 @@ import {EarthCanvas} from './canvas'
 import {SectionWrapper} from '../hoc'
 import { slideIn } from '../utils/motion'
 
+// tIBlqvY3-j-8WZ5Yg
+// template_m0o7fpc
+// service_wnbw6u4
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -15,9 +19,41 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => { };
+  const handleChange = (e) => { 
+    const {name, value} = e.target;
 
-  const handleSubmit = (e) => { };
+    setForm({...form, [name]: value})
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+      'service_wnbw6u4',
+      'template_m0o7fpc', {
+        form_name: form.name,
+        to_name: 'Abdelhadi',
+        from_email: form.email,
+        to_email: 'abdelhadioumar@gmail.com',
+        message: form.message
+      },
+      'tIBlqvY3-j-8WZ5Yg'
+    )
+    .then(res => {
+      setLoading(false);
+      alert('Thank you. I will get back to you as soon as possible.');
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }, (err) => {
+      setLoading(false);
+      console.log(err);
+      alert('Something went wrong.');
+    })
+   };
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
