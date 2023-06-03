@@ -38,6 +38,7 @@ import notesapp from './notesapp.png'
 import memorygame from './memorygame.png'
 import elzerotemplate from './elzerotemplate.png'
 import specialdesign from './specialdesign.png'
+import discoverpage from './discoverpage.png'
 
 export {
   logo,
@@ -75,5 +76,6 @@ export {
   notesapp,
   specialdesign,
   memorygame,
-  elzerotemplate
+  elzerotemplate,
+  discoverpage
 };

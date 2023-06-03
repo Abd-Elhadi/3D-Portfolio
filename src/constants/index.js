@@ -30,7 +30,8 @@ import {
     memegenerator,
     elzerotemplate,
     specialdesign,
-    memorygame
+    memorygame,
+    discoverpage,
   } from "../assets";
   
   export const navLinks = [
@@ -139,6 +140,36 @@ const experiences = [
   ];
   
   const projects = [
+    {
+      name: "Lyriks",
+      description:
+        "Lyrics is an elegant, responsive & mobile-friendly React.js music application with a modern homepage, fully-fledged music player, search, lyrics, song exploration features, search, popular music around you and worldwide top charts.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "rapidapi",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: discoverpage,
+      source_code_link: "https://github.com/Abd-Elhadi/Spotify-Clone",
+      live_site_link: "https://my-spotifyclone-app.netlify.app/",
+    },
     {
       name: "Quiz Game App",
       description:
