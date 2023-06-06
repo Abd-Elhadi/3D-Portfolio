@@ -32,6 +32,7 @@ import {
     specialdesign,
     memorygame,
     discoverpage,
+    chatgptclone
   } from "../assets";
   
   export const navLinks = [
@@ -169,6 +170,35 @@ const experiences = [
       image: discoverpage,
       source_code_link: "https://github.com/Abd-Elhadi/Spotify-Clone",
       live_site_link: "https://my-spotifyclone-app.netlify.app/",
+    },
+    {
+      name: "ChatGPT Clone",
+      description:
+        "This app is a ChatGPT Clone using OpenAIs gpt-3.5-turbo Model.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "openai",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "css",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "api",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: chatgptclone,
+      source_code_link: "https://github.com/Abd-Elhadi/Chat-GPT-Clone",
     },
     {
       name: "Quiz Game App",

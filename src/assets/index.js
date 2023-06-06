@@ -39,6 +39,7 @@ import memorygame from './memorygame.png'
 import elzerotemplate from './elzerotemplate.png'
 import specialdesign from './specialdesign.png'
 import discoverpage from './discoverpage.png'
+import chatgptclone from './chatgptclone.png'
 
 export {
   logo,
@@ -77,5 +78,6 @@ export {
   specialdesign,
   memorygame,
   elzerotemplate,
-  discoverpage
+  discoverpage,
+  chatgptclone
 };
