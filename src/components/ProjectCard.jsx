@@ -36,12 +36,12 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, l
                   className='w-1/2 h-1/2 object-contain'
                 />
                 </div>
-              <div
+              {live_site_link && <div
                 onClick={() => window.open(live_site_link, '_blank')}
                 className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
               >
                 Live
-              </div>
+              </div>}
             </div>
           </div>
           <div className='mt-5'>
