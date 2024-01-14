@@ -103,7 +103,7 @@ const experiences = [
       company_name: "Amanleek",
       icon: amanleek,
       iconBg: "#E6DEDD",
-      date: "August 2022 - October 2022",
+      date: "August 2022 - December 2022",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with product manager and other developers to create high-quality products.",
