@@ -26,7 +26,7 @@ import ProjectCard from './ProjectCard'
 //         <div className='relative w-full h-[230px]'>
 //           <img
 //             src={image}
-//             alt={name} 
+//             alt={name}
 //             className='w-full h-full object-cover rounded-2xl'
 //           />
 //           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -64,6 +64,8 @@ import ProjectCard from './ProjectCard'
 //     </motion.div>
 //   )
 // }
+
+
 
 const Works = () => {
   return (

@@ -11,6 +11,7 @@ import { slideIn } from '../utils/motion'
 // service_wnbw6u4
 
 const Contact = () => {
+  const [errorMessage, setErrorMessage] = useState('');
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
@@ -27,6 +28,14 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validate the form fields
+    if (!form.name || !form.email || !form.message) {
+      setErrorMessage('Please fill in all fields before sending.');
+      // alert('Please fill in all fields before sending.');
+      return;
+    }
+
     setLoading(true);
 
     emailjs.send(
@@ -40,20 +49,23 @@ const Contact = () => {
       },
       'tIBlqvY3-j-8WZ5Yg'
     )
-    .then(res => {
-      setLoading(false);
-      alert('Thank you. I will get back to you as soon as possible.');
-      setForm({
-        name: '',
-        email: '',
-        message: '',
-      })
-    }, (err) => {
-      setLoading(false);
-      console.log(err);
-      alert('Something went wrong.');
-    })
-   };
+      .then(res => {
+        setLoading(false);
+        // alert('Thank you. I will get back to you as soon as possible.');
+        setErrorMessage('Thank you. I will get back to you as soon as possible.');
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        });
+      }, (err) => {
+        setLoading(false);
+        console.log(err);
+        setErrorMessage('Something went wrong. Please try again later.');
+        // alert('Something went wrong.');
+      });
+  };
+
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
@@ -102,6 +114,9 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none'
             />
           </label>
+          {errorMessage && (
+            <p className="text-red-500">{errorMessage}</p>
+          )}
           <button
             type='submit'
             className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'
